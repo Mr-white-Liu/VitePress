@@ -12,7 +12,7 @@ hero:
       link: dictionary/function-guide
     - theme: alt
       text: 开始体验
-      link: /personal-center
+      link: https://oj.shiyancang.cn/
 
 features:
   - icon: 🏠

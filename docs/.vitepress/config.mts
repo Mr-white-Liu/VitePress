@@ -49,7 +49,7 @@ export default defineConfig({
 
     nav: [
       { text: '主页', link: '/' },
-      { text: '帮助手册', link: '/dictionary/function-guide' }
+      { text: '帮助指南', link: '/dictionary/function-guide' }
     ],
 
     sidebar: [

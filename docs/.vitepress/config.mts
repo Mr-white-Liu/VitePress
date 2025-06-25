@@ -6,9 +6,48 @@ export default defineConfig({
   description: "实验舱在线测评平台",
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    darkModeSwitchLabel: "切换主题",
+    lightModeSwitchTitle: "切换至深色主题",
+    darkModeSwitchTitle: "切换至浅色主题",
+    // 文章翻页
+    docFooter: {
+      prev: "上一篇", //Next page
+      next: "下一篇", //Previous page
+    },
+    //当前页面 On this page
+    outlineTitle: "页面内容",
+
+    // 返回顶部 Return to top
+    returnToTopLabel: "返回顶部",
+
+    // 菜单  Menu
+    sidebarMenuLabel: "菜单",
+
+    search: {
+      provider: 'local',
+      //配置中文提示
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索',
+            buttonAriaLabel: '搜索'
+          },
+          modal: {
+            displayDetails: '详细信息',
+            resetButtonTitle: '清除查询条件',
+            noResultsText: '未搜索到',
+            footer: {
+              selectText: '选择',
+              closeText: '关闭',
+              navigateText: '切换搜索结果'
+            }
+          }
+        }
+      }
+    },
+
     nav: [
-      { text: '简介', link: '/' },
+      { text: '主页', link: '/' },
       { text: '帮助手册', link: '/dictionary/function-guide' }
     ],
 
@@ -32,7 +71,22 @@ export default defineConfig({
         ]
       }
     ],
+
+    //页脚
+    footer: {
+      copyright: `2024-2028 © 实验舱`,
+    },
+
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: "short",
+        timeStyle: "short",
+      },
+    }
+
   },
 
-  lastUpdated: true
+  lastUpdated: true,
+  cleanUrls: true
 })

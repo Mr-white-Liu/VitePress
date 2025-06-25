@@ -1,0 +1,12 @@
+/* 让最后更新时间斜体、居右、颜色变淡 */
+.VPDocFooter .last-updated {
+    font-style: italic;
+    text-align: right;
+    color: #999;
+    display: block;
+    width: 100%;
+}
+
+.VPDocFooter .VPLastUpdated {
+    color: #999;
+}

@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "VitePress",
+  base: "/VitePress/",
   title: "实验舱在线测评平台",
   description: "实验舱在线测评平台",
 
